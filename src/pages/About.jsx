@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -9,7 +10,7 @@ const About = () => {
   return (
     <section className="max-container">
       <h1 className="head-text">
-        Hello,I'am{" "}
+        Hello, I'am
         <span className="blue-gradient_text font-semibold drop-shadow">
           Karan
         </span>
@@ -39,13 +40,14 @@ const About = () => {
 
   ))} */}
           {skills?.map((skill) => (
-            <div className="block-container w-20 h-20">
+            <div className="block-container w-20 h-20" key={skill.name}>
               <div className="btn-black rounded-xl" />
               <div className="btn-front rounded-xl flex justify-center items-center">
                 <img
                   src={skill.imageUrl}
                   alt={skill.name}
                   className="w-1/2 h-1/2 object-contain"
+                  
                 />
               </div>
             </div>

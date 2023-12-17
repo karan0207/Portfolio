@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
@@ -146,7 +147,7 @@ const Contact = () => {
             far: 1000,
           }}
         >
-          <directionalLight position={[0, 0, 1]} intensity={2.5} />
+          <directionalLight position={[0, 0, 1]} intensity={2.5}/>
           <ambientLight intensity={1} />
           <pointLight position={[5, 10, 0]} intensity={2} />
           <spotLight

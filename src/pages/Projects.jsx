@@ -1,64 +1,14 @@
-// /* eslint-disable no-unused-vars */
-// import React from "react";
-// import { projects } from "../constants/index.js";
-
-// const Projects = () => {
-//   return (
-//     <section className="max-container">
-//       <h1 className="head-text">
-//         My{" "}
-//         <span className="blue-gradient_text font-semibold drop-shadow">
-//           Projects
-//         </span>
-//       </h1>
-
-//       <div className="mt-5 flex flex-col gap-3 text-slate-500">
-//         <p>
-//           I've worked on lots of different projects over the years, but some are
-//           really special to me. Many of them are open for anyone to join in and
-//           share their ideas to make things better. If you find any of them, I'd
-//           love your thoughts and suggestions to make them even cooler.
-//         </p>
-//       </div>
-
-//     <div className="flex flex-wrap my-20 gap-16">
-//      {projects?.map((project)=>(
-//       <div className="lg:w-[400px] w-full"
-//       key={project.name}>
-//       <div className="block-container w-12 h-12">
-//         <div className={`btn-black rounded-xl ${project.theme}`}/>
-//         <div className="btn-front rounded-xl flex justify-center items-center">
-//           <img 
-//           src={project.iconUrl}
-//            alt="Project Icon" 
-//             className="w-1/2 h-1/2 object-contain"
-//            />
-//         </div>
-//       </div>
-//       </div>
-//      ))}
-//     </div>
-
-//     </section>
-//   );
-// };
-
-// export default Projects;
-
-
-
-
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
-
-import { CTA } from "../components";
-import { projects } from "../constants";
-import { arrow } from "../assets/icons";
+import { CTA } from "../components/index.js";
+import { projects } from "../constants/index.js";
+import { arrow } from "../assets/icons/index.js";
 
 const Projects = () => {
   return (
     <section className='max-container'>
       <h1 className='head-text'>
-        My{" "}
+        My
         <span className='blue-gradient_text drop-shadow font-semibold'>
           Projects
         </span>
